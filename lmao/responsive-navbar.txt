@@ -1,0 +1,86 @@
+--navbar--
+inside a <nav> element nest a <ul> element, the <li> would act as the buttons for the navbar
+
+in css, clear the padding and margin for the entire page using * selector
+
+set the body's min-height to 100vh
+
+inside the body tag, set the background image, to display the image properly:
+    set the background-size to cover
+    background-repeat to no-repeat
+    and background-position to center
+    set the font
+
+inside the nav tag:
+    set the background-color
+    apply a box-shadow, with 0.1 as the alpha
+
+for the ul tag:
+    set the width to 100%
+    remove the list-style
+    use flex for display
+    justify content to flex end
+    align items to center
+
+for the li tag:
+    set the height to 50px
+
+for the a tag:
+    set the height to 50px
+    set the padding to 0 30px
+    remove the text decoration
+    display flex
+    align items to center
+    color black
+    set the hover effect to light grey f0f0f0
+
+set the first child of the li and change the margin right to auto
+
+--responsive navbar--
+
+copy the nav element and paste it on top of the original, give it a class name
+
+in css, style the new ul:
+    postion fixed
+    top 0
+    right 0
+    height 100vh
+    width 250px
+    z index 999
+    background color to white
+    box shadow-10px 0 10px
+    display flex
+    flex direction column
+    align items flex start
+    justify content flex start
+    backdrop filter blur(10px), to see the blur, set the background color's transparency low
+    
+sidebar li:
+    width 100%
+
+sidebar a:
+    width 100%
+
+on the original navbar, create a new li with the svg for the menu a the content
+
+on the new li, create an onclick attr, and call a function
+
+create a new function on a script:
+    on the script, select the sidebar class
+    change the display to flex
+
+on the sidebar, swap the logo li to the svg of the close, and create a new function, just change the display to none
+
+to hide the navbar on mobile:
+    create a @media query max width to 800px
+    select hide on mobile class, and set the display to none
+    on the original navbar, except for the logo, give every li the class hide on mobile
+
+to make the sidebar fullscreen on mobile:
+    create a @media query for max width of 400px
+    sidebar width 100%
+
+to hide the menu button on desktop:
+    give the menu li a class
+    on css, select the class and set its display to none
+    on the fist media query, select the new class and set its display to block
